@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<title>JQplugin_test</title>
+<meta charset = "utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="JQplugin_test.js"></script>
+<script>
+
+
+$(document).ready(function() {
+	$("div").fill();
+	$("div").fill({color: "red"});
+	$.fill();
+	$.fill({color: "red"});
+	$.fill.options.color = "blue";
+	$.title();
+	$.title("newtitle");	
+})
+</script>
+</head>
+<body>
+	<div>Hello World!</div>
+</body>
+</html>
